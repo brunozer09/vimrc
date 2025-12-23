@@ -2,6 +2,15 @@
 
 This is my VIM configuration file. It uses [Plug](https://github.com/junegunn/vim-plug) for the plugin manager and have a bunch of plugins designed to provide the best minimalist experience for coding in VIM. You need to have [node.js](https://github.com/nodejs/node), [npm](https://github.com/npm/cli) and a [nerd font](https://www.nerdfonts.com/) installed for some of the plugins to work.
 
+To install everything in your machine you can just run the command
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim \
+&& curl -fLo ~/.vimrc --create-dirs \
+https://raw.githubusercontent.com/brunozer09/vimrc/refs/heads/main/.vimrc 
+```
+
 Once you have everything installed, just run the command
 
 ```vim 
