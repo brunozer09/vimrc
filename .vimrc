@@ -23,6 +23,7 @@ Plug 'nordtheme/vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 Plug 'rust-lang/rust.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
 Plug 'tpope/vim-fugitive'
 
