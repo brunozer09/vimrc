@@ -18,4 +18,10 @@ And everything should install automatically.
 * [Auto pairs](https://github.com/jiangmiao/auto-pairs) for brackets autocompletion. ~~Really, why this needs a separate extension to exist?~~
 * [VIM todo highlighting](https://github.com/sakshamgupta05/vim-todo-highlight).
 * [A fuzzy finder](junegunn/fzf.vim)
-* [Auto completion](neoclide/coc.nvim). This one need the node.js and npm installed to work. You also have to install the language server protocol of your desired language (you can do that with the command.
+* [Auto completion](neoclide/coc.nvim). This one need the node.js and npm installed to work. You also have to install the language server protocol of your desired language (you can do that with the command `:CocInstall <the-lsp-of-your-choice>`.
+* [A markdown preview extension](https://github.com/iamcco/markdown-preview.nvim) to edit markdown files.
+* Finally, [Fugitive](https://github.com/tpope/vim-fugitive) for better git integration.
+
+---
+
+You can go to each plugin repository for more information on how to use it.
