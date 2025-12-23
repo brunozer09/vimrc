@@ -98,3 +98,18 @@ let g:startify_custom_header = [
 				\ '    o0XXo   .kXXc     :X0KO;                 kXX; ',
 				\ '.`;lXXXXxxxkOXKKkxxddddkxdc:;,`...            `.  ',
 				\ ]
+
+" COC especific configurations
+inoremap <silent><expr> <TAB>
+	\ coc#pum#visible() ? coc#pum#nex(1) :
+	\ CheckBackspace() ? "\<TAB>" :
+	\ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+			\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+function! CheckBackspace() abort
+	let col = col('.') - 1
+	return !col || getline('.')[col-1] =~# '\s'
+endfunction
