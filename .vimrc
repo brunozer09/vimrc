@@ -101,7 +101,7 @@ let g:startify_custom_header = [
 
 " COC especific configurations
 inoremap <silent><expr> <TAB>
-	\ coc#pum#visible() ? coc#pum#nex(1) :
+	\ coc#pum#visible() ? coc#pum#next(1) :
 	\ CheckBackspace() ? "\<TAB>" :
 	\ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
